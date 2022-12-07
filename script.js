@@ -1,8 +1,5 @@
 // Zugriff auf
 const checkboxContainer = document.querySelector(".checkbox-container");
-let inputFast = document.querySelector("#fast");
-let inputCheap = document.querySelector("#cheap");
-let inputGood = document.querySelector("#good");
 let inputArray = [];
 
 //EventListener
@@ -18,5 +15,6 @@ function checkCheckbox(event) {
     inputArray = filterArray;
   } else {
     event.target.checked = false;
+    alert("You can only choose two checkboxes.");
   }
 }
